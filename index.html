@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Україна понад тисячу кілометрів від України — «Тигролови» Івана Багряного</title>
+<meta name="description" content="Літературне розслідування теми України в романі Івана Багряного «Тигролови», подане у чотирьох видах мистецтва: есе, поезія, ілюстрації та аудіоесей.">
+<meta name="theme-color" content="#161f2c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Україна понад тисячу кілометрів від України">
+<meta property="og:description" content="Тема України в романі Івана Багряного «Тигролови»: есе, поезія, ілюстрації та аудіоесей.">
+<meta property="og:image" content="img/eshelon_smerti.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%85%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/eshelon_smerti.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e7;
+  --paper-deep:#ede5d3;
+  --ink:#272218;
+  --ink-soft:#5a5142;
+  --ink-faint:#7a705f;
+  --crimson:#9e2b25;
+  --crimson-deep:#7c1f1a;
+  --night:#161f2c;
+  --night-deep:#0f1620;
+  --snow:#e9edf2;
+  --snow-soft:#b9c4d2;
+  --gold:#c99a3c;
+  --border:#d8cdb6;
+  --font-display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-body:'Lora',Georgia,'Times New Roman',serif;
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --text-3xl:clamp(2.1rem,0.9rem + 4.4vw,5rem);
+  --space-2:.5rem;--space-3:.75rem;
+  --space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;
+  --gutter:clamp(1rem,4vw,1.5rem);
+  --header-h:3.6rem;
+  --ease-out:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 1rem);-webkit-text-size-adjust:100%;text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{min-height:100dvh;line-height:1.65;font-family:var(--font-body);font-size:var(--text-base);color:var(--ink);background:var(--paper);overflow-x:hidden}
+body.menu-open{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.15;font-family:var(--font-display);overflow-wrap:break-word;hyphens:auto}
+p,li,figcaption{text-wrap:pretty;overflow-wrap:break-word}
+::selection{background:rgba(158,43,37,.22)}
+:focus-visible{outline:2px solid var(--crimson);outline-offset:3px;border-radius:2px}
+.center{text-align:center}
+
+.skip-link{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--night);color:var(--snow);padding:.6rem 1rem;border-radius:6px;text-decoration:none;transition:top .2s}
+.skip-link:focus{top:calc(.6rem + env(safe-area-inset-top,0px))}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(246,241,231,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding-top:env(safe-area-inset-top,0px)}
+.site-header .inner{max-width:1100px;margin:0 auto;min-height:var(--header-h);padding:.6rem max(var(--gutter),env(safe-area-inset-right,0px)) .6rem max(var(--gutter),env(safe-area-inset-left,0px));display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.wordmark{font-family:var(--font-display);font-weight:900;font-size:var(--text-lg);letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.wordmark em{font-style:italic;color:var(--crimson)}
+.nav{display:flex;gap:1.4rem;flex-wrap:wrap}
+.nav a{position:relative;font-size:var(--text-sm);color:var(--ink-soft);text-decoration:none;padding-block:2px;transition:color .25s}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--crimson);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease-out)}
+.nav a:hover,.nav a.is-active{color:var(--crimson)}
+.nav a:hover::after,.nav a.is-active::after{transform:scaleX(1)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--crimson);transform-origin:left;transform:scaleX(var(--p,0));pointer-events:none}
+
+.menu-btn{display:none;width:44px;height:44px;margin-right:-10px;border-radius:8px;position:relative}
+.menu-btn span{position:absolute;left:11px;right:11px;height:2px;background:var(--ink);border-radius:2px;transition:transform .35s var(--ease-out),opacity .2s}
+.menu-btn span:nth-child(1){top:15px}
+.menu-btn span:nth-child(2){top:21px}
+.menu-btn span:nth-child(3){top:27px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+@media(max-width:860px){
+  .menu-btn{display:block}
+  .nav{position:fixed;left:0;right:0;top:calc(var(--header-h) + env(safe-area-inset-top,0px));height:calc(100dvh - var(--header-h) - env(safe-area-inset-top,0px));flex-direction:column;flex-wrap:nowrap;gap:0;padding:1rem var(--gutter) calc(2rem + env(safe-area-inset-bottom,0px));background:var(--paper);overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-12px);transition:opacity .3s,transform .4s var(--ease-out),visibility 0s .4s}
+  .nav.is-open{visibility:visible;opacity:1;transform:none;transition:opacity .3s,transform .4s var(--ease-out),visibility 0s}
+  .nav a{font-family:var(--font-display);font-size:var(--text-xl);color:var(--ink);padding:.9rem 0;border-bottom:1px solid var(--border);opacity:0;transform:translateY(10px);transition:opacity .4s,transform .5s var(--ease-out),color .25s}
+  .nav a::after{display:none}
+  .nav.is-open a{opacity:1;transform:none}
+  .nav.is-open a:nth-child(2){transition-delay:.04s}
+  .nav.is-open a:nth-child(3){transition-delay:.08s}
+  .nav.is-open a:nth-child(4){transition-delay:.12s}
+  .nav.is-open a:nth-child(5){transition-delay:.16s}
+  .nav.is-open a:nth-child(6){transition-delay:.2s}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:var(--snow);isolation:isolate;overflow:hidden;background:var(--night-deep)}
+.hero-bg{position:absolute;inset:-6% 0 0 0;z-index:-3;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;animation:kenburns 26s ease-out both}
+.hero-veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(15,22,32,.94) 0%,rgba(15,22,32,.6) 45%,rgba(15,22,32,.35) 100%)}
+.snow{position:absolute;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;padding:var(--space-24) var(--gutter) var(--space-16);width:100%}
+.kicker{font-size:var(--text-sm);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:var(--space-4)}
+.hero h1{font-size:var(--text-3xl);font-weight:900;max-width:18ch;margin-bottom:var(--space-6);text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.hero h1 .accent{color:#e4b7b3;font-style:italic}
+.hero-sub{font-size:var(--text-lg);max-width:52ch;color:var(--snow-soft);font-style:italic;margin-bottom:var(--space-8)}
+.hero-meta{display:flex;gap:.6rem 1.2rem;flex-wrap:wrap;font-size:var(--text-sm);color:var(--snow-soft)}
+.hero-meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-meta .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
+.scroll-cue{position:absolute;left:50%;bottom:1.2rem;width:22px;height:36px;margin-left:-11px;border:1.5px solid rgba(233,237,242,.5);border-radius:12px;opacity:0;animation:fadeIn 1s 2.2s forwards}
+.scroll-cue::before{content:'';position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--gold);animation:cue 1.8s 2.6s infinite}
+
+/* page-load sequence */
+.js .hero-inner > *{opacity:0;transform:translateY(28px);animation:rise 1s var(--ease-out) forwards}
+.js .hero-inner > :nth-child(1){animation-delay:.25s}
+.js .hero-inner > :nth-child(2){animation-delay:.45s}
+.js .hero-inner > :nth-child(3){animation-delay:.75s}
+.js .hero-inner > :nth-child(4){animation-delay:.95s}
+.js .hero h1 .accent{display:inline-block;clip-path:inset(0 100% 0 0);animation:wipe 1.1s .9s var(--ease-out) forwards}
+
+@media(max-width:640px){.scroll-cue{display:none}.hero-inner{padding-top:var(--space-20);padding-bottom:var(--space-10)}}
+@media(max-height:520px) and (orientation:landscape){.hero{min-height:auto}.hero-inner{padding-top:var(--space-12);padding-bottom:var(--space-8)}.scroll-cue{display:none}.hero-sub{margin-bottom:var(--space-4)}}
+
+/* ---------- Sections ---------- */
+.section{padding-block:clamp(var(--space-12),7vw,var(--space-24))}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:max(var(--gutter),env(safe-area-inset-left,0px))}
+.prose{max-width:68ch;margin-bottom:var(--space-10)}
+.prose p{margin-bottom:var(--space-6)}
+.prose p:last-child{margin-bottom:0}
+.overline{font-size:var(--text-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--crimson);margin-bottom:var(--space-3);font-weight:600}
+.section-title{font-size:var(--text-xl);font-weight:700;margin-bottom:var(--space-8)}
+.lead{font-family:var(--font-display);font-size:var(--text-lg);font-style:italic;color:var(--ink-soft)}
+
+/* Evidence blocks */
+.evidence{display:grid;gap:var(--space-10)}
+.ev{position:relative;display:grid;grid-template-columns:4.5rem 1fr;gap:var(--space-4);padding-top:var(--space-6)}
+.ev::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--border);transform-origin:left}
+.ev-num{font-family:var(--font-display);font-size:var(--text-xl);font-weight:900;color:var(--crimson);line-height:1}
+.ev h3{font-size:var(--text-lg);margin-bottom:var(--space-4);font-weight:700}
+.ev p{margin-bottom:var(--space-4);max-width:68ch}
+.ev p:last-child{margin-bottom:0}
+@media(max-width:560px){.ev{grid-template-columns:1fr;gap:var(--space-2)}}
+
+/* Pull quote */
+.pullquote{position:relative;padding:.4rem 0 .4rem var(--space-6);margin-block:var(--space-10);max-width:58ch}
+.pullquote::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--crimson);transform-origin:top}
+.pullquote p{font-family:var(--font-display);font-size:var(--text-lg);font-style:italic;color:var(--ink);line-height:1.5}
+.pullquote cite{display:block;margin-top:var(--space-3);font-size:var(--text-sm);font-style:normal;color:var(--ink-faint)}
+
+/* Citations */
+a.src{color:var(--crimson);text-decoration:none;border-bottom:1px solid rgba(158,43,37,.4);transition:color .2s,border-color .2s}
+a.src:hover{color:var(--crimson-deep);border-color:var(--crimson-deep)}
+
+/* Full-bleed divider */
+.bleed{position:relative;margin-block:var(--space-12);background:var(--night-deep)}
+.bleed-media{height:min(78vh,66vw);overflow:hidden}
+.bleed-media img{width:100%;height:120%;object-fit:cover;transform:translate3d(0,var(--py,-8%),0);will-change:transform}
+.bleed figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(15,22,32,.88),transparent);color:var(--snow);padding:var(--space-16) var(--gutter) var(--space-6);font-size:var(--text-sm);font-style:italic}
+.bleed figcaption > *{max-width:1100px;margin-inline:auto}
+.bleed figcaption strong{font-style:normal;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-size:var(--text-xs);display:block;margin-bottom:.3rem}
+@media(max-width:640px){
+  .bleed{margin-block:var(--space-8) 0}
+  .bleed-media{height:72vw}
+  .bleed figcaption{position:static;background:var(--night);padding:var(--space-4) var(--gutter) var(--space-6)}
+}
+
+/* ---------- Audio ---------- */
+.audio-card{background:var(--night);color:var(--snow);border-radius:10px;padding:clamp(var(--space-6),5vw,var(--space-16));max-width:860px}
+.audio-card .overline{color:var(--gold)}
+.audio-card h2{font-size:var(--text-xl);color:var(--snow);margin-bottom:var(--space-4)}
+.audio-card p{color:var(--snow-soft);font-size:var(--text-sm);margin-bottom:var(--space-8);max-width:60ch}
+.audio-card audio{width:100%}
+.audio-card .audio-note{margin:var(--space-4) 0 0;font-size:var(--text-xs);color:var(--snow-soft);opacity:.75}
+.audio-fallback{color:var(--gold)}
+
+.player{display:flex;align-items:center;gap:clamp(.8rem,3vw,1.4rem)}
+.player[hidden]{display:none}
+.play{flex:none;width:clamp(52px,12vw,64px);aspect-ratio:1;border-radius:50%;background:var(--gold);color:var(--night-deep);display:grid;place-items:center;position:relative;transition:transform .25s var(--ease-out),background .25s}
+.play:hover{background:#d9ad52}
+.play:active{transform:scale(.94)}
+.play svg{width:40%;height:40%;fill:currentColor}
+.play .i-pause{display:none}
+.player.is-playing .play .i-play{display:none}
+.player.is-playing .play .i-pause{display:block}
+.play::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);opacity:0}
+.player.is-playing .play::after{animation:pulse 2s infinite}
+.player-body{flex:1;min-width:0}
+.bars{display:flex;align-items:flex-end;gap:3px;height:34px;margin-bottom:.5rem}
+.bars i{flex:1;min-width:2px;height:var(--h);border-radius:2px;background:rgba(185,196,210,.3);transform-origin:bottom;transition:background .3s}
+.bars i.on{background:var(--gold)}
+.player.is-playing .bars i{animation:eq 1.1s ease-in-out infinite alternate;animation-delay:var(--d)}
+.seek{width:100%;-webkit-appearance:none;appearance:none;height:18px;background:transparent;cursor:pointer;--p:0%}
+.seek::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(to right,var(--gold) var(--p),rgba(185,196,210,.25) var(--p))}
+.seek::-moz-range-track{height:4px;border-radius:2px;background:linear-gradient(to right,var(--gold) var(--p),rgba(185,196,210,.25) var(--p))}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;margin-top:-5px;border-radius:50%;background:var(--snow);border:0}
+.seek::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--snow);border:0}
+.times{display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--snow-soft);font-variant-numeric:tabular-nums}
+@media(max-width:420px){.bars{height:24px;gap:2px}}
+
+/* ---------- Poem ---------- */
+.poem-section{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,var(--night) 0%,var(--night-deep) 100%);color:var(--snow)}
+.poem-section .snow{z-index:-1;opacity:.7}
+.poem-section .overline{color:var(--gold)}
+.poem-section h2{font-size:var(--text-xl);color:var(--snow);margin-bottom:var(--space-3)}
+.poem-sub{font-style:italic;color:var(--snow-soft);margin-bottom:var(--space-10);font-size:var(--text-sm)}
+.poem{max-width:36ch;margin:0 auto;text-align:center;font-family:var(--font-display);font-size:var(--text-lg);line-height:1.7}
+.poem .stanza{margin-bottom:var(--space-8)}
+.poem .stanza:last-child{margin-bottom:0}
+.poem-note{max-width:60ch;margin:var(--space-10) auto 0;font-size:var(--text-sm);color:var(--snow-soft);font-style:italic;border-top:1px solid rgba(185,196,210,.25);padding-top:var(--space-6)}
+@media(max-width:420px){.poem{font-size:1.05rem}}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);align-items:start}
+.g-item{display:flex;flex-direction:column;gap:var(--space-3)}
+.g-open{display:block;width:100%;padding:0;border-radius:6px;overflow:hidden;box-shadow:0 10px 30px rgba(39,34,24,.14);cursor:zoom-in;position:relative}
+.g-open img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .9s var(--ease-out),filter .5s}
+.g-item.tall .g-open img{aspect-ratio:3/4}
+.g-open::after{content:'';position:absolute;right:.7rem;bottom:.7rem;width:34px;height:34px;border-radius:50%;background:rgba(15,22,32,.6) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e9edf2' stroke-width='2'%3E%3Cpath d='M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7'/%3E%3C/svg%3E") center/16px no-repeat;opacity:0;transform:scale(.8);transition:opacity .3s,transform .3s var(--ease-out)}
+@media(hover:hover){
+  .g-open:hover img{transform:scale(1.05);filter:saturate(1.08)}
+  .g-open:hover::after{opacity:1;transform:none}
+}
+@media(hover:none){.g-open::after{opacity:1;transform:none}}
+.g-item figcaption{display:flex;flex-direction:column;gap:var(--space-2)}
+.g-item h3{font-size:var(--text-base);font-weight:700}
+.g-item p{font-size:var(--text-sm);color:var(--ink-soft)}
+.g-item .tag{font-size:var(--text-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--crimson);font-weight:600}
+@media(max-width:1024px){
+  .gallery{grid-template-columns:1fr 1fr}
+  .g-item.tall{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--space-6);align-items:center}
+}
+@media(max-width:600px){
+  .gallery{grid-template-columns:1fr;gap:var(--space-10)}
+  .g-item.tall{display:flex}
+  .g-item.tall .g-open img{aspect-ratio:4/5}
+}
+
+/* Lightbox */
+.lightbox{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--snow)}
+.lightbox::backdrop{background:rgba(10,14,20,.92)}
+.lightbox[open]{display:grid;place-items:center;animation:fadeIn .3s}
+.lightbox figure{display:flex;flex-direction:column;align-items:center;gap:1rem;padding:calc(3.5rem + env(safe-area-inset-top,0px)) 1rem calc(1.5rem + env(safe-area-inset-bottom,0px));max-width:min(1200px,100%)}
+.lightbox img{max-height:calc(100dvh - 10rem);width:auto;border-radius:4px;animation:zoomIn .45s var(--ease-out)}
+.lightbox figcaption{font-style:italic;color:var(--snow-soft);text-align:center;max-width:60ch;font-size:var(--text-sm)}
+.lb-close{position:fixed;top:calc(.8rem + env(safe-area-inset-top,0px));right:calc(.8rem + env(safe-area-inset-right,0px));width:44px;height:44px;border-radius:50%;background:rgba(233,237,242,.12);color:var(--snow);font-size:1.6rem;line-height:1}
+.lb-close:hover{background:rgba(233,237,242,.22)}
+
+/* ---------- Conclusions ---------- */
+.conclusions{background:var(--paper-deep)}
+.conclusion-list{counter-reset:concl;display:grid;gap:var(--space-6);max-width:72ch}
+.conclusion-list li{list-style:none;display:grid;grid-template-columns:2.6rem 1fr;gap:var(--space-4);align-items:start}
+.conclusion-list li::before{counter-increment:concl;content:counter(concl,decimal-leading-zero);font-family:var(--font-display);font-weight:900;color:var(--crimson);font-size:var(--text-lg);line-height:1.4}
+.conclusion-list strong{font-weight:600}
+.final-word{position:relative;margin-top:var(--space-10);font-family:var(--font-display);font-style:italic;font-size:var(--text-lg);max-width:56ch;padding-left:var(--space-6)}
+.final-word::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--crimson);transform-origin:top}
+@media(max-width:420px){.conclusion-list li{grid-template-columns:2rem 1fr;gap:var(--space-3)}}
+
+/* ---------- Sources / footer ---------- */
+.sources li{list-style:none;margin-bottom:var(--space-3);font-size:var(--text-sm);padding-left:1.4rem;text-indent:-1.4rem}
+.sources li::before{content:'—';color:var(--crimson);margin-right:.6rem}
+.site-footer{background:var(--night-deep);color:var(--snow-soft);padding-block:var(--space-10) calc(var(--space-10) + env(safe-area-inset-bottom,0px));font-size:var(--text-sm)}
+.site-footer .wrap{display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap}
+.site-footer a{color:var(--snow)}
+.site-footer em{color:var(--gold)}
+@media(max-width:640px){.site-footer .wrap{flex-direction:column}}
+
+.to-top{position:fixed;right:calc(1rem + env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:40;width:46px;height:46px;border-radius:50%;background:var(--night);color:var(--gold);display:grid;place-items:center;box-shadow:0 8px 24px rgba(15,22,32,.3);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .3s,transform .4s var(--ease-out),visibility 0s .4s}
+.to-top.is-shown{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .4s var(--ease-out)}
+.to-top svg{width:20px;height:20px}
+
+/* ---------- Scroll reveal (only when JS works) ---------- */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out);transition-delay:var(--delay,0s)}
+.js .reveal.is-visible{opacity:1;transform:none}
+.js .ev.reveal::before{transform:scaleX(0);transition:transform 1.2s var(--ease-out)}
+.js .ev.reveal.is-visible::before{transform:scaleX(1)}
+.js .pullquote.reveal::before,.js .final-word.reveal::before{transform:scaleY(0);transition:transform .9s .3s var(--ease-out)}
+.js .pullquote.reveal.is-visible::before,.js .final-word.reveal.is-visible::before{transform:scaleY(1)}
+.js .stanza.reveal{transform:translateY(16px);filter:blur(4px);transition:opacity 1.2s var(--ease-out),transform 1.2s var(--ease-out),filter 1.2s var(--ease-out)}
+.js .stanza.reveal.is-visible{filter:none}
+
+/* ---------- Keyframes ---------- */
+@keyframes kenburns{from{transform:scale(1.14)}to{transform:scale(1)}}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes wipe{to{clip-path:inset(0 0 0 0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes cue{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+@keyframes eq{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+@keyframes zoomIn{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+
+/* ---------- Large screens ---------- */
+@media(min-width:1600px){
+  .wrap,.site-header .inner,.hero-inner{max-width:1240px}
+}
+
+/* ---------- Reduced motion ---------- */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js .reveal,.js .hero-inner > *{opacity:1!important;transform:none!important;filter:none!important}
+  .js .hero h1 .accent{clip-path:none}
+  .snow,.scroll-cue{display:none}
+}
+
+/* ---------- Print ---------- */
+@media print{
+  .site-header,.audio-card,.snow,.to-top,.scroll-cue,.skip-link{display:none!important}
+  .hero{min-height:auto;color:var(--ink);background:none}
+  .hero-bg,.hero-veil{display:none}
+  .poem-section{background:none;color:var(--ink)}
+  .poem-section h2,.poem-section .poem-note,.poem-sub{color:var(--ink)}
+  .js .reveal{opacity:1;transform:none;filter:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+
+<a class="skip-link" href="#rozsliduvannia">Перейти до тексту</a>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="wordmark" href="#top">Тигро<em>лови</em></a>
+    <button class="menu-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Основна навігація">
+      <a href="#audio">Аудіо</a>
+      <a href="#rozsliduvannia">Розслідування</a>
+      <a href="#virsh">Вірш</a>
+      <a href="#galereia">Галерея</a>
+      <a href="#vysnovky">Висновки</a>
+      <a href="#djerela">Джерела</a>
+    </nav>
+  </div>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Титул">
+  <div class="hero-bg"><img src="img/eshelon_smerti.webp" width="1536" height="1024" fetchpriority="high" decoding="async" alt="Нічний ешелон смерті мчить засніженою тайгою; дим паровоза перетворюється на голову дракона"></div>
+  <canvas class="snow" aria-hidden="true"></canvas>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <p class="kicker">Літературне розслідування у чотирьох видах мистецтва</p>
+    <h1>Україна понад тисячу кілометрів <span class="accent">від України</span></h1>
+    <p class="hero-sub">Тема України в романі Івана Багряного «Тигролови»: дослідження, подане через есе, поезію, образотворче мистецтво й аудіоесей.</p>
+    <div class="hero-meta">
+      <span><span class="dot"></span>Перша версія — 1943 р., за 14 днів</span>
+      <span><span class="dot"></span>Зелений Клин, Далекий Схід</span>
+      <span><span class="dot"></span>7 «слідів» розслідування</span>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#audio" aria-label="Гортати донизу"></a>
+</section>
+
+<!-- ============ AUDIO ============ -->
+<section class="section" id="audio">
+  <div class="wrap">
+    <div class="audio-card reveal">
+      <p class="overline">Аудіомистецтво · радіоесей · 2 хв</p>
+      <h2>«Україна понад тисячу кілометрів від України»</h2>
+      <p>Коротке радіоесей українською мовою з підсумками розслідування: історія написання роману, Зелений Клин, символи й головний висновок. Послухайте — або читайте далі.</p>
+      <audio controls preload="metadata" src="audio/radioesei.mp3">
+        Ваш браузер не підтримує відтворення аудіо. <a class="src audio-fallback" href="audio/radioesei.mp3">Завантажити запис (MP3)</a>
+      </audio>
+      <div class="player" hidden>
+        <button class="play" type="button" aria-label="Відтворити">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="5" height="16" rx="1"/><rect x="14" y="4" width="5" height="16" rx="1"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="bars" aria-hidden="true"></div>
+          <input class="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Позиція відтворення">
+          <div class="times"><span class="cur">0:00</span><span class="dur">2:02</span></div>
+        </div>
+      </div>
+      <p class="audio-note">Озвучення: штучний голос. Повний текст есе — нижче на сторінці.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESSAY ============ -->
+<section class="section" id="rozsliduvannia">
+  <div class="wrap">
+    <p class="overline">Літературне мистецтво · есе</p>
+    <h2 class="section-title">Розслідування: сім «слідів» теми України</h2>
+
+    <div class="prose reveal">
+      <p class="lead">Де закінчується Україна? На державному кордоні? На останній хаті над Дніпром?</p>
+      <p>Іван Багряний, сам утікач із сталінського ешелону смерті, дає в «Тигроловах» іншу відповідь: <strong>Україна закінчується там, де замовкає остання українська пісня</strong>. Дія роману відбувається за тисячі кілометрів від Батьківщини — у сибірській тайзі та на Далекому Сході, — і саме там письменник доводить: Україна — це не територія, а народ, мова, пісня і хата (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+    </div>
+
+    <div class="evidence">
+
+      <article class="ev reveal">
+        <div class="ev-num">01</div>
+        <div>
+          <h3>Слід перший: досвід автора</h3>
+          <p>Роман має виразний автобіографічний фундамент: Багряний сам пройшов заслання на Далекий Схід, утік із етапного спецпотяга НКВС і майже два роки жив у тайзі. Письменник зізнавався: «Мені не треба було нічого вигадувати. Життя товпилося в моїй душі і виривалося, як Ніагара» (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+          <p>Оригінальну версію твору автор написав 1943 року, переховуючись від гестапо в Моршині, — за 14 днів, майже цілодобово. Перша публікація вийшла 1944 року у Львові під назвою «Звіролови» і здобула першу премію на літературному конкурсі, а повну відновлену з пам'яті версію під назвою «Тигролови» видано 1946 року в Новому Ульмі (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">02</div>
+        <div>
+          <h3>Слід другий: Зелений Клин — «друга Україна»</h3>
+          <p>Географічний ключ до теми України — <strong>Зелений Клин</strong>, історична українська назва земель Приамур'я на Далекому Сході (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_%D0%9A%D0%BB%D0%B8%D0%BD" target="_blank" rel="noopener">Вікіпедія</a>). Перші українські переселенці — вихідці з Полтавської губернії — прибули на Амур ще 1860–1861 роках; згодом українці становили близько 70 % селян-переселенців краю, а в Південно-Усурійському краї — понад 81 % (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F_%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9A%D0%BB%D0%B8%D0%BD%D1%83" target="_blank" rel="noopener">Хронологія історії Зеленого Клину</a>).</p>
+          <p>Саме туди після втечі з ешелону потрапляє герой роману Григорій Многогрішний, і саме там його приймає українська родина тигроловів — Сірки (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>). Маршрут твору — «Україна – потяг до Сибіру – Сибір – тайга – поселення Зеленого Клину – Хабаровськ – Маньчжурія» — це не просто географія втечі, а мапа розсіяної України (<a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Херсонська обласна бібліотека</a>).</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">03</div>
+        <div>
+          <h3>Слід третій: два потяги — два світи</h3>
+          <p>Роман відкривається двома потягами. Перший — «ешелон смерті»: «шістдесят вагонів-коробок — шістдесят суглобів у дракона», з паровозом «Й. С.» (Йосиф Сталін) і демоном «Ф. Д.» (Фелікс Дзержинський), чорне черево якого «натоптане вщерть» жертвами (<a class="src" href="https://www.chitay.org.ua/dovidka/tigrolovi-analiz-bagryaniy" target="_blank" rel="noopener">Читай</a>). Другий — комфортабельний експрес для партійної еліти. Потяг-дракон — символ тоталітаризму, що уособлює загрозу знищення.</p>
+          <p>І в цьому драконі — найпронизливіший образ України в романі: крізь загратовані вікна в'язні дивляться «крізь темряву десь на утрачений світ, десь туди, де лишилась країна, осяяна сонцем… де лишилась Вітчизна, озвучена сміхом дитинства і юності рано одтятої, де лишилась мати… родина… дружина» (<a class="src" href="https://uk.wikiquote.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіцитати</a>).</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">04</div>
+        <div>
+          <h3>Слід четвертий: пісня, що «здіймається на крила»</h3>
+          <p>Вершина української теми — сцена, коли в ешелоні смерті лунає українська пісня. Вона «здіймається на крила», «шугає і б'є крильми над спиною дракона», її мелодія «кипить, вирує» — і вартові не можуть її спинити. Пояснення автора звучить як формула всього твору (<a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Херсонська обласна бібліотека</a>):</p>
+          <blockquote class="pullquote reveal">
+            <p>«Бо то — голос невпокореної волі, свідчення нездоланності українського духу»</p>
+            <cite>Іван Багряний, «Тигролови»</cite>
+          </blockquote>
+          <p>Мова і пісня виявляються тією зброєю, яку не конфіскує НКВС. Україна постає не як спогад і не як територія, а як <strong>звук</strong>.</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">05</div>
+        <div>
+          <h3>Слід п'ятий: білена хата — «маленька Україна» в тайзі</h3>
+          <p>Ключовий символ роману дослідники формулюють коротко: «білена глиняна хата — символ України в тайзі» (<a class="src" href="https://www.chitay.org.ua/dovidka/tigrolovi-analiz-bagryaniy" target="_blank" rel="noopener">Читай</a>). Хата Сірків — перенесена на Далекий Схід українська хатка: білені стіни, рушники, українська мова, пісні, родинне Різдво. Українське життя відтворено «з багатьма промовливими деталями, предметами українського побуту» (<a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Херсонська обласна бібліотека</a>).</p>
+          <p>Сірки — не «радянські люди», а нащадки козацького роду: Денис Сірко — «несхибний мисливець, справжній господар тайги», Гриць — «справжній спадкоємець козацького духу», Наталка — дівчина, вихована «в кращих українських традиціях» (<a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Херсонська обласна бібліотека</a>). Через цю родину Багряний утверджує мужність, фізичну й моральну силу українців як нації (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">06</div>
+        <div>
+          <h3>Слід шостий: прізвище Многогрішний, або історія, що повторюється</h3>
+          <p>Ім'я головного героя — історичний сигнал. Григорій Многогрішний — правнук гетьмана Дем'яна Многогрішного (1668–1672), який «боровся проти окупації України московськими царями, через що його заслали на каторгу до Сибіру» (<a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Херсонська обласна бібліотека</a>). Триста років по тому правнук гетьмана знову їде тим самим сибірським шляхом — уже в сталінському ешелоні смерті.</p>
+          <p>Григорій у романі — «тигр», якого не приручив тоталітарний режим. Йому протистоїть майор НКВС Медвин — «новітній тигролов», «втілення сатанинської сутності сталінського режиму», який веде полювання не на звіра, а на вільну людину. Змінивши початкову назву «Звіролови» на «Тигролови», автор поглибив зміст: в умовах тоталітаризму людина полює на людину (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>). Втеча Григорія з потяга стає для сотень в'язнів доказом, що «зі сталінським режимом можна й потрібно боротись».</p>
+        </div>
+      </article>
+
+      <article class="ev reveal">
+        <div class="ev-num">07</div>
+        <div>
+          <h3>Слід сьомий: як світ побачив українця</h3>
+          <p>Роман став для Європи відкриттям українця — «представника зневаженої й упослідженої нації, яку розпинали і Ленін, і Сталін жахливими голодами, драконівськими репресіями» (<a class="src" href="https://naurok.com.ua/i-bagryaniy-tigrolovi-zhanrovi-osoblivosti-ideyno-hudozhniy-analiz-ta-zmist-tvoru-380048.html" target="_blank" rel="noopener">Naurok</a>). Його перекладено англійською (1954, Macmillan), нідерландською (1959), німецькою (1961), іспанською (2006) (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+          <p>Юрій Шерех: роман «стверджує жанр українського пригодницького роману, українського усім своїм духом, усім спрямуванням, усіма ідеями, почуттями, характерами». Юрій Лавріненко: твір «здер шкуру зека» й показав «незламну горду людину, повну життєвої снаги, волі до життя і боротьби». Василь Чорнограй: це «епопея мужньої боротьби й перемоги нового українства» (<a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">Вікіпедія</a>).</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FULL-BLEED DIVIDER ============ -->
+<figure class="bleed">
+  <div class="bleed-media"><img src="img/bilena_hata.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Білена українська хата з рушниками і соняшниками стоїть у засніженій тайзі; з лісу виходить тигр"></div>
+  <figcaption>
+    <div><strong>Образотворче мистецтво · ілюстрація 2</strong>
+    Білена глиняна хата родини Сірків — символ України в тайзі. Тигр виходить з лісу не як загроза, а як охоронець.</div>
+  </figcaption>
+</figure>
+
+<!-- ============ POEM ============ -->
+<section class="section poem-section" id="virsh">
+  <canvas class="snow" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <p class="overline center">Поетичне мистецтво</p>
+    <h2 class="center">Білена хата в тайзі</h2>
+    <p class="poem-sub center">вірш за мотивами роману Івана Багряного «Тигролови»</p>
+
+    <div class="poem">
+      <div class="stanza reveal">Тисячі верст — до Дніпра й саду,<br>тисячі зим — до тепла й ладу,<br>та в тайзі, де туман і граніт,<br>біла хата, мов зоря, стоїть.</div>
+      <div class="stanza reveal">Мчить крізь ніч ешелон-дракон:<br>шістдесят суглобів, крик і стогін,<br>чорне черево, натоптане вщерть,<br>мчить у прірву — у сніг і смерть.</div>
+      <div class="stanza reveal">Та здіймається пісня на крила,<br>шугає над спиною дракона —<br>так лунає жива, як сила,<br>воля, вища за всякі закони.</div>
+      <div class="stanza reveal">Прадід-гетьман колись проти Москви<br>підніс булаву — і згинув у кайданах.<br>Триста літ минуло — і знову вони:<br>правнук іде у снігах і туманах.</div>
+      <div class="stanza reveal">Тигр не знає ні ґрат, ні полону,<br>не скориться ані страху, ні закону.<br>А полює на вільних не звір, не дракон —<br>на людей полює людолов-закон.</div>
+      <div class="stanza reveal">А за ними — сніги і кордон,<br>дві тіні у ніч — і це не сон:<br>сміливим завжди всміхається щастя,<br>а хата біла не знає нещастя.</div>
+      <div class="stanza reveal">Бо не в верстах, не в державних межах —<br>у мові, пісні, у дітях і снах,<br>у біленій хаті, в пульсі народу —<br>там Україна, від сходу до сходу.</div>
+    </div>
+
+    <p class="poem-note reveal">«Зелений Клин» — історична українська назва земель Приамур'я на Далекому Сході, куди в другій половині ХІХ століття переселялися українські родини (перші — з Полтавщини, 1860–1861). Саме там, у родини тигроловів Сірків, після втечі з ешелону смерті знаходить притулок герой роману Григорій Многогрішний.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="galereia">
+  <div class="wrap">
+    <p class="overline">Образотворче мистецтво · серія ілюстрацій</p>
+    <h2 class="section-title">Галерея: три образи роману</h2>
+    <div class="gallery">
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Збільшити ілюстрацію"><img src="img/eshelon_smerti.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Нічний ешелон смерті з драконовим димом мчить засніженою тайгою"></button>
+        <figcaption>
+        <p class="tag">Ілюстрація 1</p>
+        <h3>Ешелон смерті</h3>
+        <p>Потяг-дракон — символ тоталітаризму: «шістдесят вагонів-коробок — шістдесят суглобів у дракона». Експресіоністська графіка в дусі українського модернізму початку ХХ століття.</p>
+              </figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Збільшити ілюстрацію"><img src="img/bilena_hata.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Білена хата з рушниками і соняшниками у зимовій тайзі, біля лісу стоїть тигр"></button>
+        <figcaption>
+        <p class="tag">Ілюстрація 2</p>
+        <h3>Білена хата в тайзі</h3>
+        <p>Перенесена на Далекий Схід Україна: рушники, соняшники, тепле вікно — і дикий тигр як охоронець порогу. Тепло хати проти холоду тайги.</p>
+              </figcaption>
+      </figure>
+      <figure class="g-item tall reveal">
+        <button class="g-open" type="button" aria-label="Збільшити ілюстрацію"><img src="img/tyhr_i_liudyna.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="Молодий українець у вишиванці стоїть віч-на-віч з уссурійським тигром у сніжній тайзі"></button>
+        <figcaption>
+        <p class="tag">Ілюстрація 3</p>
+        <h3>Тигр і людина</h3>
+        <p>Григорій Многогрішний у вишиванці — віч-на-віч з тигром: дві незламні істоти, рівні у своїй волі. Символ людини, якої не приручив тоталітарний режим.</p>
+              </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCLUSIONS ============ -->
+<section class="section conclusions" id="vysnovky">
+  <div class="wrap">
+    <p class="overline">Підсумок</p>
+    <h2 class="section-title">Висновки розслідування</h2>
+    <ol class="conclusion-list">
+      <li class="reveal"><p><strong>Україна в «Тигроловах» — це не місце, а народ.</strong> За тисячі кілометрів від Дніпра, у Зеленому Клині, Україна існує — у мові, пісні, біленій хаті, родині й пам'яті.</p></li>
+      <li class="reveal"><p><strong>Дві колії — це два світи в одній імперії:</strong> ешелон смерті та експрес привілейованих; тоталітарна система протиставлена приватному вільному життю людини.</p></li>
+      <li class="reveal"><p><strong>Пісня — найзбройніша зброя:</strong> «голос невпокореної волі» не можуть спинити ані ґрати, ані вартові.</p></li>
+      <li class="reveal"><p><strong>Історія повторюється, доки не завершиться боротьбою:</strong> правнук гетьмана, засланого до Сибіру, знову в сибірському ешелоні — і знову бореться.</p></li>
+      <li class="reveal"><p><strong>Тигр не приручається:</strong> символ волі і незламності людського духу — сам герой, українець, якого не зламала система.</p></li>
+    </ol>
+    <p class="final-word reveal">Ідея роману формулюється однією фразою: за будь-яких обставин кожен має залишатися Людиною — а Україна має залишатися Україною (<a class="src" href="https://www.chitay.org.ua/dovidka/tigrolovi-analiz-bagryaniy" target="_blank" rel="noopener">Читай</a>).</p>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section class="section" id="djerela">
+  <div class="wrap">
+    <p class="overline">Документи справи</p>
+    <h2 class="section-title">Джерела</h2>
+    <ul class="sources">
+      <li><a class="src" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">«Тигролови» — Вікіпедія</a></li>
+      <li><a class="src" href="https://uk.wikiquote.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8" target="_blank" rel="noopener">«Тигролови» — Вікіцитати</a></li>
+      <li><a class="src" href="https://biblio.lib.kherson.ua/tigrolovi.htm" target="_blank" rel="noopener">Авантюрно-пригодницький роман Івана Багряного «Тигролови» — Херсонська обласна бібліотека ім. О. Гончара</a></li>
+      <li><a class="src" href="https://www.chitay.org.ua/dovidka/tigrolovi-analiz-bagryaniy" target="_blank" rel="noopener">Аналіз роману «Тигролови» — Читай</a></li>
+      <li><a class="src" href="https://actio.kiev.ua/tyhrolovy-analiz/" target="_blank" rel="noopener">«Тигролови»: аналіз роману — Actio</a></li>
+      <li><a class="src" href="https://uk.wikipedia.org/wiki/%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_%D0%9A%D0%BB%D0%B8%D0%BD" target="_blank" rel="noopener">Зелений Клин — Вікіпедія</a></li>
+      <li><a class="src" href="https://uk.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F_%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9A%D0%BB%D0%B8%D0%BD%D1%83" target="_blank" rel="noopener">Хронологія історії Зеленого Клину — Вікіпедія</a></li>
+      <li><a class="src" href="https://www.myslenedrevo.com.ua/uk/Lit/B/BagrjanyjI/Prose/Tygrolovy/1/4.html" target="_blank" rel="noopener">І. Багряний. «Тигролови». Розділ 4. Родина тигроловів — Мислене древо</a></li>
+      <li><a class="src" href="https://naurok.com.ua/i-bagryaniy-tigrolovi-zhanrovi-osoblivosti-ideyno-hudozhniy-analiz-ta-zmist-tvoru-380048.html" target="_blank" rel="noopener">Жанрові особливості та ідейно-художній аналіз — Naurok</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>«Тигролови» Івана Багряного · літературне розслідування теми України</p>
+    <p>Есе, вірш, ілюстрації й озвучення підготовлені для навчальної презентації. <em>Від Дніпра — до Зеленого Клину. Від сходу — до сходу.</em></p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Нагору">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<dialog class="lightbox" aria-label="Перегляд ілюстрації">
+  <button class="lb-close" type="button" aria-label="Закрити">×</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</dialog>
+
+<script>
+(function () {
+  'use strict';
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = $('.menu-btn'), nav = $('#site-nav');
+  function setMenu(open) {
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Закрити меню' : 'Відкрити меню');
+    nav.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+  }
+  menuBtn.addEventListener('click', function () { setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'); });
+  $$('a', nav).forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); menuBtn.focus(); } });
+  window.matchMedia('(min-width: 861px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+
+  /* ---------- Active nav link ---------- */
+  var links = {};
+  $$('a', nav).forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var navIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && links[en.target.id]) {
+          $$('a', nav).forEach(function (a) { a.classList.remove('is-active'); });
+          links[en.target.id].classList.add('is-active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(links).forEach(function (id) { var s = document.getElementById(id); if (s) navIO.observe(s); });
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  var groups = [['.stanza', 0], ['.conclusion-list li', .08], ['.gallery .g-item', .12]];
+  groups.forEach(function (g) { $$(g[0]).forEach(function (el, i) { if (g[1]) el.style.setProperty('--delay', (i * g[1]) + 's'); }); });
+  var revealEls = $$('.reveal');
+  if (!('IntersectionObserver' in window) || reduce) {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: .08 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Scroll effects: progress, parallax, to-top ---------- */
+  var progress = $('.progress'), heroBg = $('.hero-bg'), hero = $('.hero');
+  var bleed = $('.bleed'), bleedImg = $('.bleed-media img'), toTop = $('.to-top');
+  var ticking = false;
+  function onScroll() {
+    var y = window.scrollY, vh = window.innerHeight;
+    var max = document.documentElement.scrollHeight - vh;
+    progress.style.setProperty('--p', max > 0 ? Math.min(1, y / max) : 0);
+    toTop.classList.toggle('is-shown', y > vh * 1.2);
+    if (!reduce) {
+      if (y < hero.offsetHeight) heroBg.style.transform = 'translate3d(0,' + (y * .3).toFixed(1) + 'px,0)';
+      var r = bleed.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < vh) {
+        var t = (vh - r.top) / (vh + r.height);            // 0 → 1 while passing
+        bleedImg.style.setProperty('--py', (-16 + t * 16).toFixed(2) + '%');
+      }
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+  toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+  /* ---------- Snow ---------- */
+  function Snow(canvas) {
+    var ctx = canvas.getContext('2d'), flakes = [], w = 0, h = 0, running = false, raf = 0;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    function resize() {
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var count = Math.round(Math.min(160, w * h / 9000));
+      flakes = [];
+      for (var i = 0; i < count; i++) flakes.push(make(true));
+    }
+    function make(anywhere) {
+      var z = Math.random();
+      return { x: Math.random() * w, y: anywhere ? Math.random() * h : -10, r: .6 + z * 2.2,
+               s: .3 + z * 1.1, a: .25 + z * .6, sway: Math.random() * Math.PI * 2 };
+    }
+    function frame() {
+      ctx.clearRect(0, 0, w, h);
+      for (var i = 0; i < flakes.length; i++) {
+        var f = flakes[i];
+        f.y += f.s; f.sway += .012; f.x += Math.sin(f.sway) * .35 + .15;
+        if (f.y > h + 5 || f.x > w + 5) { flakes[i] = make(false); continue; }
+        ctx.globalAlpha = f.a; ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, 6.283); ctx.fillStyle = '#eef2f7'; ctx.fill();
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    resize();
+    window.addEventListener('resize', function () { resize(); });
+    new IntersectionObserver(function (en) {
+      if (en[0].isIntersecting && !running) { running = true; frame(); }
+      else if (!en[0].isIntersecting && running) { running = false; cancelAnimationFrame(raf); }
+    }).observe(canvas);
+  }
+  if (!reduce && 'IntersectionObserver' in window) $$('canvas.snow').forEach(function (c) { new Snow(c); });
+
+  /* ---------- Custom audio player ---------- */
+  var audio = $('#audio audio'), player = $('.player');
+  if (audio && player) {
+    audio.removeAttribute('controls');
+    audio.hidden = true;
+    player.hidden = false;
+    var btn = $('.play', player), seek = $('.seek', player), cur = $('.cur', player), dur = $('.dur', player), bars = $('.bars', player);
+    var N = window.innerWidth < 420 ? 28 : 44, barEls = [];
+    for (var i = 0; i < N; i++) {
+      var b = document.createElement('i');
+      var hgt = 25 + Math.abs(Math.sin(i * 1.7) * 45) + Math.abs(Math.cos(i * .6) * 30);
+      b.style.setProperty('--h', Math.min(100, hgt).toFixed(0) + '%');
+      b.style.setProperty('--d', (-(i * 0.13) % 1.1).toFixed(2) + 's');
+      bars.appendChild(b); barEls.push(b);
+    }
+    var fmt = function (s) { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+    var seeking = false;
+    function paint() {
+      var d = audio.duration || 0, p = d ? audio.currentTime / d : 0;
+      if (!seeking) seek.value = Math.round(p * 1000);
+      seek.style.setProperty('--p', (seek.value / 10) + '%');
+      cur.textContent = fmt(audio.currentTime);
+      var on = Math.round((seek.value / 1000) * N);
+      barEls.forEach(function (el, k) { el.classList.toggle('on', k < on); });
+    }
+    btn.addEventListener('click', function () { audio.paused ? audio.play() : audio.pause(); });
+    audio.addEventListener('play', function () { player.classList.add('is-playing'); btn.setAttribute('aria-label', 'Пауза'); });
+    audio.addEventListener('pause', function () { player.classList.remove('is-playing'); btn.setAttribute('aria-label', 'Відтворити'); });
+    audio.addEventListener('ended', function () { audio.currentTime = 0; paint(); });
+    audio.addEventListener('loadedmetadata', function () { dur.textContent = fmt(audio.duration); });
+    audio.addEventListener('timeupdate', paint);
+    seek.addEventListener('input', function () {
+      seeking = true;
+      if (audio.duration) audio.currentTime = (seek.value / 1000) * audio.duration;
+      paint(); seeking = false;
+    });
+  }
+
+  /* ---------- Lightbox ---------- */
+  var lb = $('.lightbox');
+  if (lb && typeof lb.showModal === 'function') {
+    var lbImg = $('img', lb), lbCap = $('figcaption', lb);
+    $$('.g-open').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var img = $('img', b), fig = b.closest('figure');
+        lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt;
+        lbCap.textContent = $('h3', fig).textContent + ' — ' + $('figcaption p:last-child', fig).textContent;
+        lb.showModal();
+      });
+    });
+    $('.lb-close', lb).addEventListener('click', function () { lb.close(); });
+    lb.addEventListener('click', function (e) { if (e.target === lb || e.target.tagName === 'FIGURE') lb.close(); });
+  } else {
+    $$('.g-open').forEach(function (b) { b.style.cursor = 'default'; });
+  }
+})();
+</script>
+</body>
+</html>
